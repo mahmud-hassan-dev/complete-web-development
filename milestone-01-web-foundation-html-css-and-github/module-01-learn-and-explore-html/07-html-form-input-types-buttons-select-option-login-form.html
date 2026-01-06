@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+     
+
+      <!-- select dropdown example -->
+      <br /><br />
+      <label for="role">Select Role:</label>
+      <select id="role" name="role">
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+        <option value="guest">Guest</option>
+      </select>
+
+      <h3>SELECT with size</h3>
+
+      <br /><br />
+      <label for="country">Select Country:</label>
+      <select id="country" name="country" size="4">
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+        <option value="australia">Australia</option>
+        <option value="india">India</option>
+      </select>
+
+      <h3>input list => DATA LIST</h3>
+      <br /><br />
+      <label for="city">Select City:</label>
+      <input list="cities" id="city" name="city" />
+      <datalist id="cities">
+        <option value="New York"></option>
+        <option value="Los Angeles"></option>
+        <option value="Chicago"></option>
+        <option value="Houston"></option>
+        <option value="Phoenix"></option>
+      </datalist>
+
+      <br> <br>
+       <input type="submit" value="Login" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
