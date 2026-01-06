@@ -9,4 +9,3 @@ Topics include:
 - React & Next js
 - Node 
 - MongoDB
-test1
