@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Multiple classes: element with both classes */
+        .class1.class2 {
+            color: red;
+        }
+        
+        /* Combined selectors: descendant selector */
+        div p {
+            font-weight: bold;
+        }
+        
+        /* Combined selectors: child selector */
+        div > span {
+            background-color: yellow;
+        }
+        
+        /* Attribute selector: elements with specific attribute */
+        [data-type="special"] {
+            border: 1px solid blue;
+        }
+        
+        /* Targeting div and span specifically */
+        div {
+            margin: 10px;
+        }
+        
+        span {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph inside a div (descendant selector).</p>
+        <span>This is a span inside a div (child selector).</span>
+    </div>
+    
+    <p class="class1 class2">This paragraph has multiple classes.</p>
+    
+    <div data-type="special">
+        This div has an attribute selector.
+    </div>
+    
+    <span data-type="special">This span has an attribute selector.</span>
+</body>
+</html>

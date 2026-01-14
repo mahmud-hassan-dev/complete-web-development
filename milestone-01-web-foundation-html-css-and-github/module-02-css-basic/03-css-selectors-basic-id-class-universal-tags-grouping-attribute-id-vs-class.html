@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Universal selector: applies to all elements */
+      * {
+        margin: 10px;
+      }
+
+      /* Tag selector: applies to all <p> elements */
+      p {
+        color: blue;
+      }
+
+      /* Class selector: applies to elements with class="highlight" */
+      .highlight {
+        background-color: yellow;
+      }
+
+      /* ID selector: applies to element with id="unique-paragraph" */
+      #unique-paragraph {
+        font-weight: bold;
+      }
+
+      /* ID selector: applies to element with id="unique-div" */
+      #unique-div {
+        border: 1px solid black;
+      }
+
+      /* Grouping selector: applies to <p> and <h1> elements */
+      p,
+      h1 {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Attribute selector: applies to <p> elements with a class attribute */
+      p[class] {
+        text-decoration: underline;
+      }
+
+      p[id] {
+        text-decoration: double underline;
+      }
+
+      /* ID vs Class: IDs are unique (one per page), classes can be reused on multiple elements */
+    </style>
+  </head>
+  <body>
+    <h1>
+      CSS Selectors (basic) id, class, universal, tags, grouping, attribute, id
+      vs class
+    </h1>
+
+    <p>This is a paragraph with no specific selector.</p>
+    <p class="highlight">This is a paragraph with a class selector.</p>
+    <p id="unique-paragraph">This is a paragraph with an ID selector.</p>
+    <div class="highlight" id="unique-div">
+      This is a div with both class and ID selectors.
+    </div>
+    <p>This is another paragraph with no specific selector.</p>
+  </body>
+</html>
