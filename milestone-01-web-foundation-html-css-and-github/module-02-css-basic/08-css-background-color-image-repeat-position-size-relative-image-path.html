@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background</h1>
+    <hr />
+
+    <h3>solid color background</h3>
+    <div
+      style="
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        background-color: yellow;
+      "
+    ></div>
+    <br />
+
+    <h3>gradient color background</h3>
+    <div
+      style="
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        background: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      "
+    >
+      <p style="color: white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+        blanditiis? Commodi, iusto ullam nisi quaerat voluptatibus doloremque
+        debitis magnam eius necessitatibus natus impedit! Pariatur laudantium
+        sapiente nobis cumque, ea provident?
+      </p>
+    </div>
+
+    <br />
+
+    <h3>image background</h3>
+    <div
+      style="
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        background-image: url(&quot;https://thumbs.dreamstime.com/b/green-forest-sunlight-spring-time-36213036.jpg&quot;);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    ></div>
+  </body>
+</html>
